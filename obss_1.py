@@ -1,7 +1,6 @@
 def IsSorted(A):
     error = 0
     statement = True
-    
     for i in range(len(A)-1):
         if A[i] <= A[i+1]:
            continue
@@ -10,7 +9,6 @@ def IsSorted(A):
     if error >= 2:
        return 0
     elif error == 0:
-       #statement = True
        return len(A)
     else:
        count = find(A)
